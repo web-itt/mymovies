@@ -1,0 +1,242 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="w-full max-w-6xl mx-auto py-12 px-4 md:px-6">
+  <div class="grid md:grid-cols-2 gap-8 items-start">
+    <div class="relative aspect-[2/3] rounded-lg overflow-hidden">
+      <img
+        src="/placeholder.svg"
+        alt="Movie Poster"
+        class="w-full h-full object-cover"
+        width="400"
+        height="600"
+        style="aspect-ratio: 400 / 600; object-fit: cover;"
+      />
+    </div>
+    <div class="space-y-6">
+      <div>
+        <h1 class="text-3xl font-bold tracking-tight">{{movie.title}}</h1>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">2014 | Sci-Fi, Drama | 2h 49m</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold">Synopsis</h2>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">
+          A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold">Cast</h2>
+        <ul class="text-gray-500 dark:text-gray-400 mt-2 space-y-1">
+          <li>Matthew McConaughey</li>
+          <li>Anne Hathaway</li>
+          <li>Jessica Chastain</li>
+          <li>Michael Caine</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold">Director</h2>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">Christopher Nolan</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold">Release Date</h2>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">November 7, 2014</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold">Genre</h2>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">Sci-Fi, Drama</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold">Runtime</h2>
+        <p class="text-gray-500 dark:text-gray-400 mt-2">2 hours 49 minutes</p>
+      </div>
+    </div>
+  </div>
+  <div class="mt-12">
+    <h2 class="text-2xl font-bold">User Reviews</h2>
+    <div class="mt-6 space-y-6">
+      <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+        <div class="flex flex-col space-y-1.5 p-6">
+          <div class="flex items-center space-x-4">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full h-10 w-10">
+              <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+            </span>
+            <div>
+              <h3 class="font-medium">John Doe</h3>
+              <div class="flex items-center gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5 text-gray-300"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-500 dark:text-gray-400">
+            Interstellar is a masterpiece! The visuals are breathtaking and the story is both thought-provoking and
+            emotionally gripping. The performances are outstanding, especially from Matthew McConaughey and Jessica
+            Chastain. This is a must-see film for any sci-fi fan.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+        <div class="flex flex-col space-y-1.5 p-6">
+          <div class="flex items-center space-x-4">
+            <span class="relative flex shrink-0 overflow-hidden rounded-full h-10 w-10">
+              <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+            </span>
+            <div>
+              <h3 class="font-medium">Jane Doe</h3>
+              <div class="flex items-center gap-1 text-yellow-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="w-5 h-5"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-500 dark:text-gray-400">
+            Interstellar is a cinematic masterpiece. The visuals are breathtaking, the performances are outstanding,
+            and the story is both thought-provoking and emotionally powerful. This is a film that will stay with you
+            long after you've seen it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
