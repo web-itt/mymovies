@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
-
+{% load my_filters %}
 {% block content %}
+
 <section id="WelcomeHeader">
     <div
       class="flex max-w-sm lg:w-full lg:max-w-full lg:flex justify-center p-8 rounded-xl"
@@ -46,26 +47,33 @@
 	{% for movie in movies %}
 
   <!-- Película 1 -->
-  <div class="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-90 cursor-pointer">
-    <img class="w-full  "
+  <div class="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-90 cursor-pointer"  
+    data-aos="fade-up">
+    <a href="/{{movie.id}}">
+      <img class="w-full  "
       src="https://image.tmdb.org/t/p/w600_and_h900_bestv2{{movie.poster_path}}"
       alt="Pelicula" />
     <div class="p-4">
-      <a class="text-xl font-semibold mb-2" href="/{{movie.id}}" >{{movie.title}}</a>
-      <div href="#" class="block mt-2 text-zinc-500 text">
+      <a class="text-xl font-semibold mb-2"  >{{movie.title}}</a>
+      <div class="block mt-2 text-zinc-500 text">
         <div>
-          Comedia
+          {% for genre in movie.genres.all %}
+   {{ genre.name }}
+    {% if not forloop.last %}, {% endif %}
+{% endfor %}
         </div>
         <div>
-          {{movie.release_date}}
+          {{movie.release_date|date:"d/m/Y"}}
         </div>
       </div>
     </div>
+    </a>
+    
   </div>
 
 	{% endfor %}      
     </div>
 </section>
 
-   
+
 {% endblock %}

@@ -27,8 +27,14 @@ SECRET_KEY = 'l$jg730*-_hrl2wov2k9-%frfi@*&0sen@juaa#ftgsv(46owk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://54.205.9.45','127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = ['http://54.205.9.45']
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+ 
  
 # Application definition
 
